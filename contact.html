@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Masterz.com</title>
+    <link rel="stylesheet"href="nav.css">
+    <style>
+        #smaindiv{
+            height: 550px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: lightgoldenrodyellow;
+
+        }
+        #picdiv{
+            height: 520px;
+            width: 650px;
+            margin: 20px;
+            float: left;
+        }
+        #matterdiv{
+            border: 1px solid black;
+            height: 520px;
+            width: 600px;
+            margin-right: 80px;
+            float: right;
+            margin-top: 20px;
+            background-color: wheat;
+            border-radius: 10px;
+        }
+        #forgotspan{
+            margin-left: 280px;
+            font-size: 10px;
+        }
+        #google{
+            height: 35px;
+            width: 350px;
+            margin-left: 110px;
+            color: black;
+            margin-top: 30px;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 1px solid black;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+        #twitter{
+            height: 35px;
+            width: 350px;
+            margin-left: 110px;
+            color: black;
+            margin-top: 20px;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            padding-top: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+        #orspan{
+            margin-left: 280px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        footer{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(152, 151, 151);
+            padding-top: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+        #footspan{
+            margin-left: 650px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+        #footspan2{
+            margin-left: 560px;
+            font-size: 18px;
+            font-weight: bolder;
+            
+        }
+        input[type="submit"]{
+            margin-left: 200px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            width: 160px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <ul>
+                <img style="float: left; margin-left: 30px;
+                border-radius: 37px;margin-top: 5px;"src="file-hWSJAosUJGj9UPAF0aMhHPkY.jpg"height="70">
+                <p style="float: left; font-weight: bolder;font-size: 20px;text-align: center;margin-left: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="barh">MOD
+                <br>MASTERZZ</p>
+                <h1 style="margin-right: 50px; color: white;margin-top: 25px;font-family: cursive;">YOU ASk WE GIVE .....</h1>
+            </ul>
+        </nav>
+
+        <div id="smaindiv">
+            <div style="margin-left: 60px;" id="picdiv">
+                <img style="border-radius: 10px;" src="WhatsApp Image 2024-10-16 at 7.36.45 PM.jpeg"height="520"width="700">
+            </div>
+            <div id="matterdiv">
+                <h3 style="font-size: 30px;margin-left: 150px;font-weight: bolder;">MOD MASTERZZ<h3>
+                <span style="margin-left: 210px;" id="hspan">
+                    Welcome Back !
+                </span>
+
+                <div id="name">
+                    <form style="margin-top: 50px;" onsubmit="return sub()" action="loginpage.html" method="get">
+                        <label style="color: black;font-size: 15px; margin-left: 140px;
+                        ;" for="Email">Email :</label>
+                        <input type="email"id="email"><br><br>
+
+                        <label style="color: black; font-size: 15px;margin-left: 122px;" for="password">Password: </label>
+                        <input type="password" id="password"><br><br>
+                        <input type="submit" value="Sign In">
+                    </form>
+
+                     <span id="forgotspan"><a style="text-decoration: none;" href="#">Forgot password?</a>
+                     </span>
+                
+                </div>
+                <span id="orspan">
+                    or
+                </span>
+
+                <div id="google">
+                    <img style="margin-top: 10px;" src="google4.jpg">
+                   &nbsp; &nbsp;<a style="text-decoration: none;color: black;" href="https://www.google.com">Continue with google</a>
+
+                </div>
+                <div id="twitter">
+                    <img style="margin-top: 10px;" src="twitter1.png" height="18">
+                    &nbsp;&nbsp;<a style="text-decoration: none;color: black;" href="https://www.twitter.com"> Continue with twitter</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span id="footspan">
+                &copy; Mod Masterzz. 2024
+            </span><br>
+            <span id="footspan2">
+                All Rights are Reserved ||Designed by Nithin
+            </span>
+        </footer> 
+        <script> 
+            function sub(){
+                var b = document.getElementById('email').value;
+                var c = document.getElementById('password').value;
+                if( b=="" || c==""){
+                    alert("All fields are mandatory");
+                    return false;  
+                }
+                else{
+                    return true;
+                }
+                
+            }
+        </script>
+        
+</body>
+</html>

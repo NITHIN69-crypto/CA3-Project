@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(loginpic2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+        }
+        label{
+            display: block;
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #headdiv{
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(170, 124, 37);
+        }
+        #formdiv{
+            height: 400px;
+            width: 300px;
+            border: 1px solid rgb(225, 106, 9);
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgba(216, 161, 58, 0.444);
+            margin-left: 340px;
+            margin-top: 200px;
+        }
+    
+        input[type="text"], input[type="number"], input[type="password"]{
+            width: 200px;
+            height: 10px;
+            padding: 10px;
+            border: 2px solid orange;
+        }
+        input:focus{
+            background-color: rgba(215, 178, 123, 0.411);
+        }
+        input[type="submit"]{
+            background-color: rgb(221, 130, 45);
+            height: 30px;
+            width: 230px;
+            color: black;
+            font-size: 10px;
+            font-weight: bold;
+            border: 2px solid orange;
+            border-radius: 10px;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(212, 154, 46);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="headdiv">
+        MOD<br>
+        MASTERZZ
+        <p style="font-size: 15px;color: white;margin-left: 6px;">"You ask,we give..."</p>
+    </div>
+    <div id="formdiv">
+    <form onsubmit="return sub()" action="home.html" method="get">
+        <p style="color: rgb(55, 39, 39);font-size: 40px;font-weight: bolder;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Login Now!</p>
+        <label for="mob">Mobile No: </label>
+        <input type="number" id="mob">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <span><a style="text-decoration: none;color: white;
+        margin-left: 140px;font-size: 10px;" href="#">Forgot password?</a></span><br>
+        <input type="submit" value="Login">
+        <p style="color: white;">Don't have an account?</p>
+        <a style="text-decoration: none;color: black;" href="contact.html">Sigh Up</a>
+    </form>
+    </div>
+    <script> 
+        function sub(){
+            var b = document.getElementById('mob').value;
+            var c = document.getElementById('password').value;
+            if( b=="" || c==""){
+                alert("All fields are mandatory");
+                return false;  
+            }
+            else if(b.length<10 || b.length>10){
+                alert("Mobile number should be of 10 digits");
+                return false;
+            }
+            else if(isNaN(b)){
+                alert("Mobile number should be digits only");
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
